@@ -1,0 +1,56 @@
+@import 'global';
+@import 'vars';
+
+.header {
+    &-wrapper {
+        height: 60px;
+        margin: 44px 67px 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $black;
+
+    }
+
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_title {
+            font-size: 32px;
+            line-height: 1.1;
+            letter-spacing: 0.06em;
+
+        }
+
+        &_subtitle {
+            font-size: 13px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+
+        }
+    }
+}
+
+.nav {
+    width: 443px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    &-menu {
+        display: flex;
+        align-items: center;
+
+        &_item {
+            &-link {
+                text-decoration: none;
+                display: inline-block;
+                list-style: none;
+                
+            }
+        }
+    }
+}

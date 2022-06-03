@@ -1,0 +1,52 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $georgia;
+    font-weight: 400px;
+    font-size: 32px;
+    font-style: normal;
+    color: $pink;
+}
+
+p {
+    color: $white;
+}
+
+body {
+    font-family: $arial;
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 1.6;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    color: $white;
+
+    :hover {
+        color: #FFFFFF;
+
+    }
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
