@@ -1,0 +1,217 @@
+@import  'vars', 'global';
+
+.header {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px 30px;
+
+    }
+
+    &-logo {
+        &_title {
+            color: $dark-l;
+        }
+
+        &_subtitle {
+            color: $dark-l;
+        }
+    }
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    &_item-link {
+        color: $dark-l;
+    }
+}
+
+.pets {
+    background: $white-l;
+    &-wrapper {
+        padding: 80px 40px 40px 100px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &_title {
+            text-align: center;
+            width: 400px;
+            height: 90px;
+            align-items: center;
+            line-height: 130%;
+            color: $dark-l;
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &-card {
+            width: 270px;
+            height: 435px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &-title {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+
+            }
+        }
+    }
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 45px;
+        margin-bottom: 100px;
+        &-btn {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: transparent;
+            &:hover {
+                background-color: $pink;
+            }
+        }
+    }
+}
+.footer {
+    background-image: url(../../assets/images/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 40px 0px 40px;
+
+    &-wrapper {
+        display: flex;
+        gap: 160px;
+    }
+
+    &-content {
+        display: flex;
+        gap: 160px;
+    }
+
+    &-title {
+        width: 280px;
+        height: 90px;
+        margin-bottom: 40px;
+        color: $white-xs;
+    }
+
+    &-contacts {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &_mail {
+            margin-bottom: 40px;
+            margin-left: 60px;
+            width: 251px;
+            height: 32px;
+            color: $pink;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/icons/icon-email.svg);
+                width: 40px;
+                height: 32px;
+                top: 130;
+                left: 0;
+            }
+        }
+
+        &_phone {
+            width: 239px;
+            height: 32px;
+            margin-left: 60px;
+            color: $pink;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/icons/icon-phone.svg);
+                width: 40px;
+                height: 32px;
+                top: 202px;
+                left: 0;
+            }
+        }
+    }
+
+    &-locations {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &_boston {
+            width: 260px;
+            height: 46px;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            margin-bottom: 32px;
+            margin-left: 42px;
+            color: $pink;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/icons/icon-marker.svg);
+                width: 22px;
+                height: 32px;
+                top: 130px;
+                left: 0;
+            }
+        }
+
+        &_london {
+            width: 260px;
+            height: 23px;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            margin-bottom: 32px;
+            margin-left: 42px;
+            color: $pink;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../../assets/icons/icon-marker.svg);
+                width: 22px;
+                height: 32px;
+                top: 202px;
+                left: 0;
+            }
+        }
+    }
+}
